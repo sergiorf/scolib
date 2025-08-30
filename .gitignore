@@ -16,11 +16,14 @@
 
 # Debugger Files
 *.pdb
+*.dwo
 
 # Compiled Dynamic libraries
 *.so
+*.so.*
 *.dylib
 *.dll
+*.pyd
 
 # Fortran module files
 *.mod
@@ -37,5 +40,51 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# CMake build system
+/build/
+build*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+Testing/
+
+# Ninja build
+.ninja_deps
+.ninja_log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+pip-wheel-metadata/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+*.userosscache
+.DS_Store
+
+# Logs
+*.log
+
+# Coverage / profiling
+*.gcno
+*.gcda
+*.gcov
+*.prof
+*.profraw
